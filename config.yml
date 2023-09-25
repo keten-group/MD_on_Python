@@ -1,0 +1,22 @@
+# Methadata
+logname: "PS_10mer_10"
+workdir: "./AAtoCG_test"
+
+# Computation
+omp: 1
+mpi: 10
+gpu_count: 0
+memory: 192000 # MB
+lammps_path: "/home/vrk0811/.local/bin/lmp"
+
+# Experiments
+force_field: "gaff2_mod"
+charge: "RESP"
+smiles: "*c1ccc(cc1)c1ccc(cc1)n1c(=O)c2c(c1=O)cc1c(c2)c(=O)n(c1=O)*"
+head: "*[H]" # terminal group
+tail: # If tail is None, the tail will be the same as head
+n_poly: 10
+n_chain: 15 
+n_atoms: # n_chain or n_atoms should be specified
+cell_density: 0.03
+  
